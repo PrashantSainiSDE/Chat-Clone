@@ -1,0 +1,71 @@
+@import url("node_modules/bootstrap/scss/bootstrap.scss");
+@import url("/node_modules/bootstrap-icons/font/bootstrap-icons.scss");
+
+:root{
+    --bg-chat:#09141A;
+    --user-bg:#1F2C34;
+    --mine-bg:#005D4B;
+    --user-fg:#8FC0B8;
+    --chat-padding:0px 3px 5px 5px;
+    --chat-radius:7px
+}
+.container {
+    background-color: var(--bg-chat);
+}
+.user-chat{
+    display: flex;
+    flex-direction: column;
+   
+}
+.user-chat .mine {
+    text-align: end;
+}
+.user-chat .user,.mine{
+    margin-top: 5px; 
+}
+.user-chat .user span{
+    color: var(--user-fg);
+    background-color: var(--user-bg);
+    
+}
+
+.user-chat .mine span{
+    background-color: var(--mine-bg);
+    color: var(--user-fg);
+}
+
+span,sub{
+padding: var(--chat-padding);
+border-radius: var(--chat-radius);
+}
+
+  .user-heading {
+        background-color: #1F2C34;
+        color: #EBECF0;
+    display: flex;
+  }
+
+  .user-heading .user-button {
+    margin-left: auto;
+    display: flex;
+  }
+
+  .chat-section{
+    display: flex;
+    align-items: center;
+    background-color: #1F2C34;
+    color: #8798A2;
+    border-radius: 30px;
+  }
+.chat-section input[type=text]{
+background-color:#1F2C34 ;
+border: none;
+}
+
+  .voice-section {
+    background-color: #00A984;
+    color: #FCF7FA;
+    border-radius: 50px;
+    padding: 9px;
+    text-align: center;
+  }
